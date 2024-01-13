@@ -1,0 +1,179 @@
+<html> 
+
+<head> 
+	<title>Registration Form</title> 
+	<link rel="stylesheet" type="text/css"
+		href="style.css"> 
+<style>
+body { 
+        
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	font-family: sans-serif; 
+	line-height: 1.5; 
+	min-height: 100vh; 
+	background: #f3f3f3; 
+	flex-direction: column; 
+	margin: 0; 
+  background:linear-gradient(to right,lightblue,white);
+} 
+
+.main { 
+	background:linear-gradient(to right,white,lightblue); 
+	border-radius: 15px; 
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+	padding: 10px 20px; 
+	 
+	width: 500px; 
+	text-align: center; 
+        margin-top:40px;
+        
+} 
+
+h1 { 
+	color:skyblue; 
+} 
+
+label { 
+	display: block; 
+	width: 100%; 
+	margin-top: 10px; 
+	margin-bottom: 5px; 
+	text-align: left; 
+  color:rgb(18, 163, 241);
+	font-weight: bold; 
+} 
+
+#pass { 
+	color: red; 
+	font-size: 12px; 
+} 
+
+input { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border:  2px solid #e2e2e2; 
+
+        background:transparent;
+        border:2px solid #e2e2e2;
+        border-bottom:1px solid white;
+        outline:none;
+
+} 
+
+select { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border: 2px solid #ddd; 
+	border-radius: 5px; 
+} 
+
+button { 
+	padding: 15px; 
+	border-radius: 10px; 
+	margin-top: 15px; 
+	margin-bottom: 15px; 
+	border: none; 
+	color: white; 
+	cursor: pointer; 
+	background-color:skyblue; 
+	width: 100%; 
+	font-size: 16px; 
+} 
+
+.wrap { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+#text{
+        display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box;  
+	border: 2px solid #e2e2e2;
+        border-bottom:1px solid white;
+        text-decoration:none;
+        background:transparent;
+        outline:none;
+}
+.input-field{
+  display: flex;
+  flex-direction: row;
+}
+
+</style>
+
+</head> 
+
+<body > 
+	<div class="main"> 
+		<h1>Registration Form</h1> 
+		<form action=""> 
+			<label for="first">First Name:</label> 
+			<input type="text" id="first"
+				name="first"
+				placeholder="Enter your first name" required> 
+
+			<label for="last">Last Name:</label> 
+			<input type="text" id="last"
+				name="last"
+				placeholder="Enter your last name" required> 
+
+			<label for="email">Email:</label> 
+			<input type="email" id="email"
+				name="email"
+				placeholder="Enter your email" required> 
+
+			<label for="dob">Date of Birth:</label> 
+			<input type="date"
+				id="dob" name="dob"
+				placeholder="Enter your DOB" required> 
+                      
+
+                      <label for="age">Age:</label>
+                      <input type="number" id="age" name="age" required>
+
+			<label for="password">Password:</label> 
+			<input type="password" id="password"
+				name="password"
+				placeholder="Enter your password" required> 
+
+			<label for="repassword">Re-type Password:</label> 
+			<input type="password" id="repassword"
+				name="repassword"
+				placeholder="Re-Enter your password" required> 
+			<span id="pass"></span> 
+
+			<label for="mobile">Contact:</label> 
+			<input type="text" id="mobile"
+				name="mobile"
+				placeholder="Enter your Mobile Number" required 
+				maxlength="10"> 
+      <label for="text">Address:</label>
+      <textarea id="text" placeholder="Enter Address"></textarea>
+			<div class="input-field">
+        <label class="gender">Gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="others"> others
+      </div>
+			<div class="wrap"> 
+				<button type="submit" onclick="solve()"> 
+				Submit 
+				</button> 
+			</div> 
+		</form> 
+	</div> 
+	
+</body> 
+
+</html>
